@@ -12,6 +12,10 @@ def fixExternalId(data):
                     new_key = key + "_id"
                     new_data[table][i][new_key] = new_data[table][i][key]["id"]
                     del new_data[table][i][key]
+                elif isinstance(data[table][i][key], list):
+                    new_key = key + "_id"
+                    new_data[table][i][new_key] = new_data[table][i][key][0]["id"]
+                    del new_data[table][i][key]
     return new_data
 
 if __name__=="__main__":

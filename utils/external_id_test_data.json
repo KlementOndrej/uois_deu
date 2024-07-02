@@ -19,5 +19,26 @@
                 "id": "6bbb594e-d0a9-491e-9219-d693db6d37b6"
             }
         }
+    ],
+    "projectfinances": [
+        {
+            "id": "f911230f-7e1f-4e9b-90a9-b921996ceb87",
+            "name": "komplet",
+            "amount": 100000,
+            "changedby": null,
+            "lastchange": "2024-05-21T09:28:20.413127",
+            "created": "2024-05-21T09:28:20.413127",
+            "createdby": null,
+            "rbacobject": null,
+            "valid": true,
+            "project": {
+                "id": "43dd2ff1-5c17-42a5-ba36-8b30e2a243bb"
+            },
+            "financeType": [
+                {
+                    "id": "9e37059c-de2c-4112-9009-559c8b0396f1"
+                }
+            ]
+        }
     ]
 }
