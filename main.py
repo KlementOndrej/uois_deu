@@ -15,20 +15,18 @@ def formatData(data, filt):
   data = filterKeyNames(data, filt)
   return data
 
-with open('queries.json') as user_file:
-  file_contnents = user_file.read()
+def getDemoData():
+  with open('queries.json') as user_file:
+    file_contnents = user_file.read()
+  queries = json.loads(file_contnents)
+  dbw = DBWriter()
+  output = {}
+  for key in queries:
+      response = asyncio.run(dbw.queryGQL(queries[key]))
+      output[key] = response["data"][list(response["data"].keys())[0]]
+  output = formatData(output, "utils/key_name_filter.json")
+  return output
 
-queries = json.loads(file_contnents)
-
-dbw = DBWriter()
-
-output = {}
-
-for key in queries:
-    response = asyncio.run(dbw.queryGQL(queries[key]))
-    output[key] = peelResponse(response)
-
-output = formatData(output, "utils/key_name_filter.json")
-
-file = open('test.json', 'w')
-file.write(json.dumps(output, sort_keys=False, indent=4, default=str, ensure_ascii=False))
+if __name__=="__main__":
+  file = open('demodata.json', 'w')
+  file.write(json.dumps(getDemoData(), sort_keys=False, indent=4, default=str, ensure_ascii=False))
