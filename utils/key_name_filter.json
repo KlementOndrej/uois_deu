@@ -5,40 +5,73 @@
     "events": {
         "placeid": "place_id",
         "masterevent": "masterevent_id",
+        "nameen": "name_en",
         "eventtype_id": "type_id"
     },
+    "eventtypes": {
+        "nameen": "name_en"
+    },
+    "grouptypes": {
+        "nameen": "name_en"
+    },
     "groups": {
-        "mastergroup": "mastergroup_id"
+        "mastergroup": "mastergroup_id",
+        "nameen": "name_en"
+    },
+    "rolecategories": {
+        "nameen": "name_en"
+    },
+    "roletypes": {
+        "nameen": "name_en"
+    },
+    "eventinvitationtypes": {
+        "nameen": "name_en"
+    },
+    "eventpresencetypes": {
+        "nameen": "name_en"
     },
     "plan_lessons": {
         "type_id": "lessontype_id",
         "linkedto": "linkedlesson_id"
     },
     "forms": {
-        "rbacobject_id": "rbacobject"
+        "rbacobject_id": "rbacobject",
+        "nameen": "name_en"
     },
     "formrequests": {
         "rbacobject_id": "rbacobject",
-        "creator_id": "changedby"
+        "creator_id": "changedby",
+        "nameen": "name_en"
     },
     "projectfinancecategories": {
-        "userid": "user_id"
+        "userid": "user_id",
+        "nameen": "name_en"
     },
     "projectfinancetypes": {
-        "category": "category_id"
+        "category": "category_id",
+        "nameen": "name_en"
     },
     "projecttypes": {
-        "category": "category_id"
+        "category": "category_id",
+        "nameen": "name_en"
     },
     "projects": {
         "team_id": "user_id"
     },
     "acprograms": {
         "grantsgroup_id": "group_id",
-        "licencedgroup_id": "licenced_group_id"
+        "licencedgroup_id": "licenced_group_id",
+        "nameen": "name_en"
+    },
+    "acprogramforms": {
+        "nameen": "name_en"
+    },
+    "acprograms_studentstates": {
+        "nameen": "name_en"
     },
     "acsubjects": {
-        "grants_id": "group_id"
+        "grants_id": "group_id",
+        "nameen": "name_en"
     },
     "publications": {
         "publicationtype_id": "publication_type_id",
@@ -52,5 +85,56 @@
     },
     "acclassifications": {
         "level_id": "classificationlevel_id"
+    },
+    "facilitytypes": {
+        "nameen": "name_en"
+    },
+    "formcategories": {
+        "nameen": "name_en"
+    },
+    "formtypes": {
+        "nameen": "name_en"
+    },
+    "formitemcategories": {
+        "nameen": "name_en"
+    },
+    "formitemtypes": {
+        "nameen": "name_en"
+    },
+    "acprogramtypes": {
+        "nameen": "name_en"
+    },
+    "acprogramlanguages": {
+        "nameen": "name_en"
+    },
+    "acprogramlevels": {
+        "nameen": "name_en"
+    },
+    "acprogramtitles": {
+        "nameen": "name_en"
+    },
+    "projectcategories": {
+        "nameen": "name_en"
+    },
+    "externalidcategories": {
+        "nameen": "name_en"
+    },
+    "externalidtypes": {
+        "nameen": "name_en"
+    },
+    "publicationtypes": {
+        "nameen": "name_en"
+    },
+    "acclassificationtypes": {
+        "nameen": "name_en"
+    },
+    "actopics": {
+        "nameen": "name_en"
+    },
+    "acclassificationlevels": {
+        "nameen": "name_en"
+    },
+    "aclessontypes": {
+        "nameen": "name_en"
     }
 }
