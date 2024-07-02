@@ -15,7 +15,7 @@ def formatData(data, filt):
   data = filterKeyNames(data, filt)
   return data
 
-with open('queries_finished.json') as user_file:
+with open('queries.json') as user_file:
   file_contnents = user_file.read()
 
 queries = json.loads(file_contnents)
