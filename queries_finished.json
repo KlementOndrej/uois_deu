@@ -53,5 +53,6 @@
     "eventinvitationtypes": "query { eventInvitationTypePage { id name nameEn lastchange created } }",
     "externalids": "query { externalIdsPage { id lastchange created changedBy {id} createdBy {id} innerId outerId type {id} typeName link } }",
     "externalidtypes": "query { externalidtypePage { id name nameEn lastchange created changedBy {id} createdBy {id} category {id} } }",
-    "externalidcategories": "query { externalidcategoryPage { id name nameEn lastchange created changedBy {id} createdBy {id} } }"
+    "externalidcategories": "query { externalidcategoryPage { id name nameEn lastchange created changedBy {id} createdBy {id} } }",
+    "publication_authors": "query { authorPage { id lastchange name order share valid } }"
 }
