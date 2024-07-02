@@ -18,7 +18,7 @@ def filterKeyNames(data, filter="./utils/key_name_filter.json"):
         for key in filter[table]:
             if data[table]:
                 for i in range(len(data[table])):
-                    if data[table][i][key]:
+                    if key in data[table][i].keys():
                         data[table][i][filter[table][key]] = data[table][i][key]
                         del data[table][i][key]
                     else:

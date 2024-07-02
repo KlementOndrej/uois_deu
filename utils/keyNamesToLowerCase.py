@@ -1,4 +1,4 @@
-#Changes all key names to lowercase
+#Changes all key names to lowercase, also changes nameen to name_en!!!!
 
 import json
 from copy import deepcopy

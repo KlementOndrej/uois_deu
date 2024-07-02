@@ -1,5 +1,56 @@
 {
-    "acprogramlanguages": {
-            "name": "jmeno"
-        }
+    "surveyanswers": {
+        "user": "user_id"
+    },
+    "events": {
+        "placeid": "place_id",
+        "masterevent": "masterevent_id",
+        "eventtype_id": "type_id"
+    },
+    "groups": {
+        "mastergroup": "mastergroup_id"
+    },
+    "plan_lessons": {
+        "type_id": "lessontype_id",
+        "linkedto": "linkedlesson_id"
+    },
+    "forms": {
+        "rbacobject_id": "rbacobject"
+    },
+    "formrequests": {
+        "rbacobject_id": "rbacobject",
+        "creator_id": "changedby"
+    },
+    "projectfinancecategories": {
+        "userid": "user_id"
+    },
+    "projectfinancetypes": {
+        "category": "category_id"
+    },
+    "projecttypes": {
+        "category": "category_id"
+    },
+    "projects": {
+        "team_id": "user_id"
+    },
+    "acprograms": {
+        "grantsgroup_id": "group_id",
+        "licencedgroup_id": "licenced_group_id"
+    },
+    "acsubjects": {
+        "grants_id": "group_id"
+    },
+    "publications": {
+        "publicationtype_id": "publication_type_id",
+        "publisheddate": "published_date"
+    },
+    "externalids": {
+        "link": "urlformat",
+        "type_id": "typeid_id",
+        "innerid": "inner_id",
+        "outerid": "outer_id"
+    },
+    "acclassifications": {
+        "level_id": "classificationlevel_id"
+    }
 }

@@ -11,8 +11,8 @@ def peelResponse(response):
 #formats data to be usable as demodata for uois
 def formatData(data, filt):
   data = fixExternalId(data)
-  data = filterKeyNames(data, filt)
   data = keyNamesToLowerCase(data)
+  data = filterKeyNames(data, filt)
   return data
 
 with open('queries_finished.json') as user_file:
