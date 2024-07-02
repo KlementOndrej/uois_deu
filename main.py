@@ -1,10 +1,16 @@
-from DBWriter import DBWriter
+from .utils.DBWriter import DBWriter
 import asyncio, json
 
+#takes out data from response from GQL database
 def peelResponse(response):
     return response["data"][list(response["data"].keys())[0]]
 
-with open('queries_working.json') as user_file:
+#formats data to be usable as demodata for uois
+def formatData(data):
+
+  return formated_data
+
+with open('queries_finished.json') as user_file:
   file_contnents = user_file.read()
 
 queries = json.loads(file_contnents)
@@ -20,5 +26,5 @@ for key in queries:
 
 #result = asyncio.run(dbw.queryGQL("query { roleTypePage { id name nameEn changedby {id} created lastchange createdby {id} roles {id} rbacobject {id} } }"))
 
-file = open('final.json', 'w')
+file = open('test.json', 'w')
 file.write(json.dumps(output, sort_keys=False, indent=4, default=str, ensure_ascii=False))
