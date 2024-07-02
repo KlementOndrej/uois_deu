@@ -1,0 +1,23 @@
+{
+    "acprograms": [
+        {
+            "id": "2766fc9a-b095-11ed-9bd8-0242ac110002",
+            "name": "IT Technologie",
+            "nameEn": "",
+            "createdby": null,
+            "changedby": null,
+            "created": "2024-05-21T09:28:20.699355",
+            "lastchange": "2023-04-19T08:00:00",
+            "rbacobject": null,
+            "type": {
+                "id": "fd4f0980-9315-11ed-9b95-0242ac110002"
+            },
+            "grantsGroup": {
+                "id": "6bbb594e-d0a9-491e-9219-d693db6d37b6"
+            },
+            "licencedGroup": {
+                "id": "6bbb594e-d0a9-491e-9219-d693db6d37b6"
+            }
+        }
+    ]
+}

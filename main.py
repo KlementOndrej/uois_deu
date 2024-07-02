@@ -1,4 +1,4 @@
-from .utils.DBWriter import DBWriter
+from utils.DBWriter import DBWriter
 import asyncio, json
 
 #takes out data from response from GQL database
